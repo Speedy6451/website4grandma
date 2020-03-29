@@ -55,3 +55,31 @@ div.marjorie {
 	display: inline-block;
 	width: 20%;
 }
+
+.fifty {
+	width: calc(50% - 25px);
+	float: left;
+}
+
+.box {
+	font-size: 20px;
+}
+
+.box a {
+	color: blue;
+	text-decoration: underline;
+	line-height: calc(1.25em + 0px);
+	padding: .125em;
+}
+
+.box a:hover {
+	filter: brightness(.4);
+}
+
+.box a:active {
+	filter: brightness(.1);
+}
+
+.br {
+	clear: both;
+}
