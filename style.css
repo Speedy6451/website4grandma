@@ -5,6 +5,7 @@
 .title {
 	display: flex;
 	justify-content: center;
+	text-align: center;
 }
 
 .header {
@@ -89,7 +90,7 @@ div.marjorie {
 	display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (device-width: 320px) and (orientation: portrait) {
 	.fifty {
 		min-width: calc(100% - 25px) !important;
 	}
@@ -107,6 +108,17 @@ div.marjorie {
 	div.marjorie {
 		width: 80%;
 		margin-left: 10%;
-		margin-right: 10%;
+		padding: 0;
 	}
 }
+@media screen and (device-width: 320px) and (orientation: landscape) {
+	div.marjorie {
+		width: 50%;
+	}
+	.eighty {
+		width: calc(50% - 25px);
+		margin-left: calc(50% + 15px) !important;
+		margin-right: 5px;
+	}
+}
+
